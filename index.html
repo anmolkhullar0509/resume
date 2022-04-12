@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anmol Khullar</title>
+  <link rel="stylesheet" href="css/style.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	tr{text-align:left;}
+	
+	input[type]{border-radius: 20px; height:30px;padding-left:10px;}
+	</style>
+	<script src="js/script.js"></script>
+</head>
+<body>  
+    <section class="header">
+    
+    
+        <div class="text-box">
+        <img src="images/anmol.jpg" height="300px" width="200px">
+			<h2> Anmol Khullar</h1>
+            <p> Web Developer (CPP)			</p>
+            <a href="resume.pdf" download="file" class="hero-btn" style="border-radius: 25px;"><i class="fa fa-download"> Resume</i></a>
+			&nbsp;&nbsp;<a href="#contactme" class="hero-btn" style="border-radius: 25px;">Contact Me</a>
+        </div>
+    </section>
+	
+    <section class="infographic">
+        <div class="row">
+        <div class="infographic-col">
+        <h3 style="text-align:left;"> Academic Honesty</h3>
+            <p align="justify">I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.</p>
+			<p align="left">Date : April, 11<sup> th</sup> 2022</p>
+        </div>
+         <div class="infographic-col">
+        <h3 style="text-align:left;">Basic Information</h3>
+				<table width="80%"  border=0>
+					<tr align=left>
+						<td>Age</td><td>21</td>
+					</tr>
+					<tr align=left>
+						<td>Email</td><td>akhullar2@myseneca.ca</td>
+					</tr>
+					<tr align=left>
+						<td>Language</td><td>English</td>
+					</tr>
+					<tr align=left>
+						<td>Class Section</td><td>ZCC</td>
+					</tr>
+					<tr align=left>
+						<td>Student ID</td><td>131408205</td>
+					</tr>
+					<tr align=left>
+						<td>Instructor</td><td>NOMAN ATIQUE</td>
+					</tr>
+					</table>
+        </div>
+         
+        </div>
+    </section>
+    
+    
+    <section class="education">
+	<h1 align="center">Education</h1>
+	<div class="education-col">
+        <table width="80%" height=200px border=1 style="margin-left:30px;">
+		<tr>
+		<td bgcolor="blue" width="40%"><font color=white>2021-2022</font><br><br> <font color=white size=5>Bachelor's Degree</font></td>
+		<td align=left style="padding-left:20px;"><font size="5" >Bachelor's Degree</font><br><font size=3>SENECA COLLEGE</font><br><br><font size=2>Under the supervision of </font><font color=green size=3>Dr. Awesome</font><br>
+		<font size=2>Awarded with all scholrships in the world.</font>
+		</td>
+		</tr>
+		</table><br>
+		<table width="80%" height=200px border=1 style="margin-left:30px;">
+		<tr>
+		<td bgcolor="blue" width="40%"><font color=white>2018(expected)</font><br><br> <font color=white size=5>Secondary education</font></td>
+		<td align=left style="padding-left:20px;"><font size="5" >secondary education</font><br><font size=3>DCM school</font><br><br><font size=2>Under the supervision of </font><font color=green size=3>mr mittal</font><br>
+		<font size=2>passed my secondary education in 2018</font>
+		</td>
+		</tr>
+		</table>
+		</div>
+    </section>
+	
+	<section class="contactme" id="contactme">
+		
+    
+        <div class="text-box">
+		
+		
+		<h1> Contact Me</h1>
+        <form action="https://httpbin.org/post" method="post" name="f1" onSubmit="return test()">
+		<table width="80%" align=center border=0>
+		<tr>
+		<td><label for="Name">Name</label></td>
+		<td><input type=text name="t1" size="30" required></td>
+		</tr>
+		<tr>
+		<td><label for="Email Address">Email Address</label></td>
+		<td><input type="email" name="t2" size="30" required></td>
+		</tr>
+		<tr>
+		<td><label for="Address">Address</label></td>
+		
+		<td><input type=text name="t2" size="30" required></td>
+		</tr>
+		<tr>
+		<datalist id="citydata">
+  <option>Toronto</option>
+  <option>Vancouver, British Columbia</option>
+  <option>British Columbia</option>
+  <option>Quebec</option>
+  <option>Ontario · Victoria</option>
+  <option>Nova Scotia</option>
+  <option>British Columbia · Halifax</option>
+  
+</datalist>
+		<td><label for="city">city</label></td>
+		<td><input type="text" list="citydata" id="city" name="city" size="30" autocomplete="off"  required/></td>
+		</tr>
+		<tr>
+		<td><label for="postal code">Postal Code</label></td>
+		<td><input type=text name="t7" size="30" required></td>
+		</tr>
+		
+		<tr>
+		<td><label for="what">what this is about</label></td>
+		<td><label for="Question">Question</label>
+		<input type=radio name="r1" onClick="hide1()" value="question">
+		<label for="Comment">Comment</label>
+		<input type=radio name="r1" value="comment" onClick="hide1()">
+		<label for="Hiring">Hiring</label>
+		<input type=radio name="r1" value="hiring" onClick="show1()">
+		<label for="Enter" name="l1" id="l1" style="display:none;">Enter Hourly Rate<input Type=text name=t6 id="t6" style="display:none;">
+		</td>
+		</tr>
+		<tr>
+		
+		<td><label for="Message">Message</label></td>
+		<td><textarea rows="5" cols="30" name="t5"></textarea></td>
+		</tr>
+		<tr>
+		<td><label for="Mobile">Mobile</label></td>
+		<td><input type=text name="t2" size="30"></td>
+		</tr>
+		<tr>
+		<td colspan=2 align=center><input type="submit" value="send" name=b1 style="width:200px;"><input type="reset" value="Clear" name=b1 style="width:200px;"></td>
+		<tr>
+		</table>
+		</form>
+		
+        </div>
+    </section>
+	
+    <section class="footer">
+        <ul type="cirlce">
+        <li>Name : Anmol Khullar</li>
+        <li>Date : 11th April, 2022</li>
+        <li>Course: WEB222</li>
+        <li>Section : ZCC</li>
+		<li>Proffersor name: NOMAN ATIQUE</li>
+        </ul>
+        
+    </section>
+
+    
+    </body>
+</html>
